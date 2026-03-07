@@ -1,0 +1,26 @@
+model: deepseek-chat
+
+report:
+  template: |
+    # {{ date }} A股涨停板复盘研报
+
+    ## 一、市场情绪
+    {{ sentiment }}
+
+    ## 二、涨停股池（Top {{ top_n }}）
+    {{ limit_up_table }}
+
+    ## 三、龙虎榜核心席位
+    {{ dragon_tiger_table }}
+
+    ## 四、龙头逻辑归因
+    {{ analysis }}
+
+    ## 五、操作建议
+    {{ suggestion }}
+
+    ---
+    > 数据来源：AkShare | 生成时间：{{ generated_at }}
+    > ⚠️ 风险提示：本研报仅供参考，不构成投资建议。
+
+top_n: 20
