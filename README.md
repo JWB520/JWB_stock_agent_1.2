@@ -22,7 +22,7 @@
 ```
 
 ### 🗣️ 翻译官 (Instruction Translator) · `agent/workers/translator.py`
-流水线第一关。将用户口语化、模糊的指令（如"看看赛力斯"）扩写并解析为标准 JSON 结构化指令，包含 `target_assets`（目标标的）、`analysis_focus`（分析侧重点）、`required_data`（需调用的数据工具）、`intent_summary`（意图摘要）四个字段，向下游精准投喂。内置 JSON 解析失败的降级兜底，确保流水线不中断。
+流水线第一关。将用户口语化、模糊的指令（如"看看赛力斯"）扩写并解析为标准 JSON 结构化指令，包含 `target_assets`（目标标的）、`analysis_focus`（分析侧重点）、`required_data`（需调用的数据工具）、`intent_summary`（意图摘要）四个字段，向下游精准投喂。内置 JSON 解析失败的降级兜底，确保流水线不中断。**v2 新增 `memory_action` 字段**：识别"清空上下文/重新开始"→ `clear_all`，"忘了XX股"→ `forget_ticker`，Orchestrator 在进入 Scout 前优先执行对应的记忆清洗操作。
 
 ### 🕵️ 情报官 (Data Scout) · `agent/workers/scout.py`
 连接 AkShare 工具链，通过 Function Calling 循环（最大迭代 **30 次**）精准提取数据。内置**智能分流纪律**：检测到持仓股名称时自动切换为个股深度调研模式（news + kline + fundamentals），仅在明确要求大盘复盘时才查龙虎榜/涨停池。内置**日期回溯机制**：遇到周末/节假日自动往前推日期重试。**工具调用失败时强制写入 `{"error": "...真实数据为空"}` 到 `raw_data`，严禁静默跳过。**
@@ -59,7 +59,9 @@ a-share-agent/
 ├── agent/
 │   ├── orchestrator.py      # 主编排器：调度五段式流水线
 │   ├── schema.py            # TaskContext：Agent 间共享上下文
-│   ├── memory.py            # 短期对话记忆（deque 滑动窗口）
+│   ├── memory.py            # 结构化记忆管理（MemoryMessage + MemoryManager）
+│   │                        #   · ticker 倒排索引 + 精准删除
+│   │                        #   · token 感知截断 / 按话题召回
 │   ├── main.py              # 终端交互入口
 │   └── workers/
 │       ├── translator.py    # 翻译官：口语指令 → 结构化 JSON
