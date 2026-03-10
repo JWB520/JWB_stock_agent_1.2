@@ -54,6 +54,15 @@ def run(ctx: TaskContext, model: str = "deepseek-chat") -> None:
                 args = json.loads(tc.function.arguments)
             except json.JSONDecodeError:
                 args = {}
-            result = TOOL_MAP[tc.function.name](**args) if tc.function.name in TOOL_MAP else "{}"
-            ctx.raw_data[tc.function.name] = result
+            tool_name = tc.function.name
+            if tool_name not in TOOL_MAP:
+                result = json.dumps({"error": f"工具 {tool_name} 不存在，真实数据为空"}, ensure_ascii=False)
+            else:
+                try:
+                    result = TOOL_MAP[tool_name](**args)
+                    if not result or result in ("{}", "[]", "null"):
+                        result = json.dumps({"error": f"获取 {tool_name} 数据失败，真实数据为空"}, ensure_ascii=False)
+                except Exception as e:
+                    result = json.dumps({"error": f"获取 {tool_name} 数据失败，真实数据为空，异常：{e}"}, ensure_ascii=False)
+            ctx.raw_data[tool_name] = result
             messages.append({"role": "tool", "tool_call_id": tc.id, "content": result})

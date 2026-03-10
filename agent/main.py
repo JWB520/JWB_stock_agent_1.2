@@ -8,8 +8,8 @@ from agent.orchestrator import Orchestrator
 
 def main():
     print("=" * 50)
-    print("🚀 A股多智能体研究组 (情报官->分析师->主编) 已就绪")
-    print('💡 提示：你可以随意使用"昨天"、"上周五"或"20260306"等时间描述。')
+    print("🚀 A股多智能体研究组 (情报官->分析师->主编 + 评委) 已就绪")
+    print('💡 提示：你可以随意使用"昨天"、"上周五"或"20260306"等时间描述。你可以询问任何问题')
     print("=" * 50)
 
     orchestrator = Orchestrator()

@@ -14,3 +14,337 @@ TypeError: 'NoneType' object is not subscriptable
 2026-03-08 00:45:17 [INFO] Tool [get_market_sentiment] OK in 209.8ms | status=ok
 2026-03-08 00:45:22 [INFO] Tool [get_stock_news] args={'symbol': '688176'}
 2026-03-08 00:45:22 [INFO] Tool [get_stock_news] OK in 200.6ms | status=ok
+2026-03-08 08:31:38 [INFO] Tool [get_market_sentiment] args={'date': '20260308'}
+2026-03-08 08:31:38 [INFO] Tool [get_market_sentiment] OK in 230.6ms | status=ok
+2026-03-08 08:31:42 [INFO] Tool [get_limit_up_pool] args={'date': '20260308'}
+2026-03-08 08:31:42 [INFO] Tool [get_limit_up_pool] OK in 269.3ms | status=ok
+2026-03-08 08:31:45 [INFO] Tool [get_dragon_tiger_list] args={'start_date': '20260308', 'end_date': '20260308'}
+2026-03-08 08:31:45 [ERROR] Tool [get_dragon_tiger_list] FAILED in 408.0ms | 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "e:\Finance\code\a-share-agent\tools\akshare_tools.py", line 62, in _safe_call
+    df = func(**kwargs)
+  File "D:\anaconda\Lib\site-packages\akshare\stock_feature\stock_lhb_em.py", line 46, in stock_lhb_detail_em
+    total_page_num = data_json["result"]["pages"]
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2026-03-08 08:31:48 [INFO] Tool [get_stock_news] args={'symbol': '000533'}
+2026-03-08 08:31:49 [INFO] Tool [get_stock_news] OK in 214.2ms | status=ok
+2026-03-08 08:31:51 [INFO] Tool [get_stock_news] args={'symbol': '601567'}
+2026-03-08 08:31:52 [INFO] Tool [get_stock_news] OK in 323.3ms | status=ok
+2026-03-08 08:55:58 [INFO] Tool [get_dragon_tiger_list] args={'start_date': '20260306', 'end_date': '20260306'}
+2026-03-08 08:55:59 [INFO] Tool [get_dragon_tiger_list] OK in 800.9ms | status=ok
+2026-03-08 09:10:44 [INFO] Tool [get_market_sentiment] args={'date': '20260306'}
+2026-03-08 09:10:51 [INFO] Tool [get_market_sentiment] OK in 7319.8ms | status=ok
+2026-03-08 09:10:57 [INFO] Tool [get_limit_up_pool] args={'date': '20260306'}
+2026-03-08 09:10:58 [INFO] Tool [get_limit_up_pool] OK in 929.8ms | status=ok
+2026-03-08 09:11:09 [INFO] Tool [get_stock_news] args={'symbol': '002498'}
+2026-03-08 09:11:10 [INFO] Tool [get_stock_news] OK in 1016.2ms | status=ok
+2026-03-08 10:16:50 [INFO] Tool [get_dragon_tiger_list] args={'start_date': '20260308', 'end_date': '20260308'}
+2026-03-08 10:16:50 [ERROR] Tool [get_dragon_tiger_list] FAILED in 373.9ms | 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "e:\Finance\code\a-share-agent\tools\akshare_tools.py", line 62, in _safe_call
+    df = func(**kwargs)
+  File "D:\anaconda\Lib\site-packages\akshare\stock_feature\stock_lhb_em.py", line 46, in stock_lhb_detail_em
+    total_page_num = data_json["result"]["pages"]
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2026-03-08 10:16:53 [INFO] Tool [get_dragon_tiger_list] args={'start_date': '20260307', 'end_date': '20260307'}
+2026-03-08 10:16:53 [ERROR] Tool [get_dragon_tiger_list] FAILED in 387.1ms | 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "e:\Finance\code\a-share-agent\tools\akshare_tools.py", line 62, in _safe_call
+    df = func(**kwargs)
+  File "D:\anaconda\Lib\site-packages\akshare\stock_feature\stock_lhb_em.py", line 46, in stock_lhb_detail_em
+    total_page_num = data_json["result"]["pages"]
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2026-03-08 10:16:59 [INFO] Tool [get_stock_news] args={'symbol': '600875'}
+2026-03-08 10:16:59 [INFO] Tool [get_stock_news] OK in 132.3ms | status=ok
+2026-03-08 10:17:02 [INFO] Tool [get_stock_news] args={'symbol': '162411'}
+2026-03-08 10:17:02 [INFO] Tool [get_stock_news] OK in 292.6ms | status=ok
+2026-03-08 10:17:05 [INFO] Tool [get_stock_news] args={'symbol': '600583'}
+2026-03-08 10:17:05 [INFO] Tool [get_stock_news] OK in 108.7ms | status=ok
+2026-03-08 10:26:15 [INFO] Tool [get_dragon_tiger_list] args={'start_date': '20260308', 'end_date': '20260308'}
+2026-03-08 10:26:15 [ERROR] Tool [get_dragon_tiger_list] FAILED in 222.9ms | 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "e:\Finance\code\a-share-agent\tools\akshare_tools.py", line 62, in _safe_call
+    df = func(**kwargs)
+  File "D:\anaconda\Lib\site-packages\akshare\stock_feature\stock_lhb_em.py", line 46, in stock_lhb_detail_em
+    total_page_num = data_json["result"]["pages"]
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2026-03-08 10:26:18 [INFO] Tool [get_dragon_tiger_list] args={'start_date': '20260307', 'end_date': '20260307'}
+2026-03-08 10:26:18 [ERROR] Tool [get_dragon_tiger_list] FAILED in 230.5ms | 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "e:\Finance\code\a-share-agent\tools\akshare_tools.py", line 62, in _safe_call
+    df = func(**kwargs)
+  File "D:\anaconda\Lib\site-packages\akshare\stock_feature\stock_lhb_em.py", line 46, in stock_lhb_detail_em
+    total_page_num = data_json["result"]["pages"]
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2026-03-08 10:35:31 [INFO] Tool [get_market_sentiment] args={'date': '20260307'}
+2026-03-08 10:35:31 [INFO] Tool [get_market_sentiment] OK in 213.1ms | status=ok
+2026-03-08 10:35:35 [INFO] Tool [get_limit_up_pool] args={'date': '20260307'}
+2026-03-08 10:35:35 [INFO] Tool [get_limit_up_pool] OK in 238.0ms | status=ok
+2026-03-08 10:35:38 [INFO] Tool [get_dragon_tiger_list] args={'start_date': '20260307', 'end_date': '20260307'}
+2026-03-08 10:35:38 [ERROR] Tool [get_dragon_tiger_list] FAILED in 270.1ms | 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "e:\Finance\code\a-share-agent\tools\akshare_tools.py", line 62, in _safe_call
+    df = func(**kwargs)
+  File "D:\anaconda\Lib\site-packages\akshare\stock_feature\stock_lhb_em.py", line 46, in stock_lhb_detail_em
+    total_page_num = data_json["result"]["pages"]
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2026-03-08 10:35:46 [INFO] Tool [get_stock_news] args={'symbol': '002506'}
+2026-03-08 10:35:46 [INFO] Tool [get_stock_news] OK in 120.3ms | status=ok
+2026-03-08 10:36:41 [INFO] Tool [get_stock_news] args={'symbol': '600309'}
+2026-03-08 10:36:41 [INFO] Tool [get_stock_news] OK in 186.5ms | status=ok
+2026-03-08 10:53:33 [INFO] Tool [get_stock_kline] args={'symbol': '600875', 'days': 20}
+2026-03-08 10:53:34 [INFO] Tool [get_stock_kline] OK in 572.5ms | status=ok
+2026-03-08 10:53:37 [INFO] Tool [get_stock_fundamentals] args={'symbol': '600875'}
+2026-03-08 10:53:37 [INFO] Tool [get_stock_fundamentals] OK in 314.8ms | status=ok
+2026-03-08 10:53:40 [INFO] Tool [get_stock_kline] args={'symbol': '600583', 'days': 20}
+2026-03-08 10:53:40 [ERROR] Tool [get_stock_kline] FAILED in 288.6ms | HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=1&secid=1.600583&beg=19700101&end=20500101 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\anaconda\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "D:\anaconda\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "D:\anaconda\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "D:\anaconda\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "D:\anaconda\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\anaconda\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "D:\anaconda\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=1&secid=1.600583&beg=19700101&end=20500101 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\Finance\code\a-share-agent\tools\akshare_tools.py", line 105, in get_stock_kline
+    df = ak.stock_zh_a_hist(symbol=symbol, period="daily", adjust="qfq")
+  File "D:\anaconda\Lib\site-packages\akshare\stock_feature\stock_hist_em.py", line 992, in stock_zh_a_hist
+    r = requests.get(url, params=params, timeout=timeout)
+  File "D:\anaconda\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "D:\anaconda\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\anaconda\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\anaconda\Lib\site-packages\requests\adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=1&secid=1.600583&beg=19700101&end=20500101 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+
+2026-03-08 10:53:43 [INFO] Tool [get_stock_fundamentals] args={'symbol': '600583'}
+2026-03-08 10:53:43 [ERROR] Tool [get_stock_fundamentals] FAILED in 215.7ms | HTTPSConnectionPool(host='push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/get?fltt=2&invt=2&fields=f120%2Cf121%2Cf122%2Cf174%2Cf175%2Cf59%2Cf163%2Cf43%2Cf57%2Cf58%2Cf169%2Cf170%2Cf46%2Cf44%2Cf51%2Cf168%2Cf47%2Cf164%2Cf116%2Cf60%2Cf45%2Cf52%2Cf50%2Cf48%2Cf167%2Cf117%2Cf71%2Cf161%2Cf49%2Cf530%2Cf135%2Cf136%2Cf137%2Cf138%2Cf139%2Cf141%2Cf142%2Cf144%2Cf145%2Cf147%2Cf148%2Cf140%2Cf143%2Cf146%2Cf149%2Cf55%2Cf62%2Cf162%2Cf92%2Cf173%2Cf104%2Cf105%2Cf84%2Cf85%2Cf183%2Cf184%2Cf185%2Cf186%2Cf187%2Cf188%2Cf189%2Cf190%2Cf191%2Cf192%2Cf107%2Cf111%2Cf86%2Cf177%2Cf78%2Cf110%2Cf262%2Cf263%2Cf264%2Cf267%2Cf268%2Cf255%2Cf256%2Cf257%2Cf258%2Cf127%2Cf199%2Cf128%2Cf198%2Cf259%2Cf260%2Cf261%2Cf171%2Cf277%2Cf278%2Cf279%2Cf288%2Cf152%2Cf250%2Cf251%2Cf252%2Cf253%2Cf254%2Cf269%2Cf270%2Cf271%2Cf272%2Cf273%2Cf274%2Cf275%2Cf276%2Cf265%2Cf266%2Cf289%2Cf290%2Cf286%2Cf285%2Cf292%2Cf293%2Cf294%2Cf295%2Cf43&secid=1.600583 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\anaconda\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "D:\anaconda\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "D:\anaconda\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "D:\anaconda\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "D:\anaconda\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\anaconda\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "D:\anaconda\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/get?fltt=2&invt=2&fields=f120%2Cf121%2Cf122%2Cf174%2Cf175%2Cf59%2Cf163%2Cf43%2Cf57%2Cf58%2Cf169%2Cf170%2Cf46%2Cf44%2Cf51%2Cf168%2Cf47%2Cf164%2Cf116%2Cf60%2Cf45%2Cf52%2Cf50%2Cf48%2Cf167%2Cf117%2Cf71%2Cf161%2Cf49%2Cf530%2Cf135%2Cf136%2Cf137%2Cf138%2Cf139%2Cf141%2Cf142%2Cf144%2Cf145%2Cf147%2Cf148%2Cf140%2Cf143%2Cf146%2Cf149%2Cf55%2Cf62%2Cf162%2Cf92%2Cf173%2Cf104%2Cf105%2Cf84%2Cf85%2Cf183%2Cf184%2Cf185%2Cf186%2Cf187%2Cf188%2Cf189%2Cf190%2Cf191%2Cf192%2Cf107%2Cf111%2Cf86%2Cf177%2Cf78%2Cf110%2Cf262%2Cf263%2Cf264%2Cf267%2Cf268%2Cf255%2Cf256%2Cf257%2Cf258%2Cf127%2Cf199%2Cf128%2Cf198%2Cf259%2Cf260%2Cf261%2Cf171%2Cf277%2Cf278%2Cf279%2Cf288%2Cf152%2Cf250%2Cf251%2Cf252%2Cf253%2Cf254%2Cf269%2Cf270%2Cf271%2Cf272%2Cf273%2Cf274%2Cf275%2Cf276%2Cf265%2Cf266%2Cf289%2Cf290%2Cf286%2Cf285%2Cf292%2Cf293%2Cf294%2Cf295%2Cf43&secid=1.600583 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\Finance\code\a-share-agent\tools\akshare_tools.py", line 129, in get_stock_fundamentals
+    df = ak.stock_individual_info_em(symbol=symbol)
+  File "D:\anaconda\Lib\site-packages\akshare\stock\stock_info_em.py", line 40, in stock_individual_info_em
+    r = requests.get(url, params=params, timeout=timeout)
+  File "D:\anaconda\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "D:\anaconda\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\anaconda\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\anaconda\Lib\site-packages\requests\adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/get?fltt=2&invt=2&fields=f120%2Cf121%2Cf122%2Cf174%2Cf175%2Cf59%2Cf163%2Cf43%2Cf57%2Cf58%2Cf169%2Cf170%2Cf46%2Cf44%2Cf51%2Cf168%2Cf47%2Cf164%2Cf116%2Cf60%2Cf45%2Cf52%2Cf50%2Cf48%2Cf167%2Cf117%2Cf71%2Cf161%2Cf49%2Cf530%2Cf135%2Cf136%2Cf137%2Cf138%2Cf139%2Cf141%2Cf142%2Cf144%2Cf145%2Cf147%2Cf148%2Cf140%2Cf143%2Cf146%2Cf149%2Cf55%2Cf62%2Cf162%2Cf92%2Cf173%2Cf104%2Cf105%2Cf84%2Cf85%2Cf183%2Cf184%2Cf185%2Cf186%2Cf187%2Cf188%2Cf189%2Cf190%2Cf191%2Cf192%2Cf107%2Cf111%2Cf86%2Cf177%2Cf78%2Cf110%2Cf262%2Cf263%2Cf264%2Cf267%2Cf268%2Cf255%2Cf256%2Cf257%2Cf258%2Cf127%2Cf199%2Cf128%2Cf198%2Cf259%2Cf260%2Cf261%2Cf171%2Cf277%2Cf278%2Cf279%2Cf288%2Cf152%2Cf250%2Cf251%2Cf252%2Cf253%2Cf254%2Cf269%2Cf270%2Cf271%2Cf272%2Cf273%2Cf274%2Cf275%2Cf276%2Cf265%2Cf266%2Cf289%2Cf290%2Cf286%2Cf285%2Cf292%2Cf293%2Cf294%2Cf295%2Cf43&secid=1.600583 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+
+2026-03-08 10:55:19 [INFO] Tool [get_stock_kline] args={'symbol': '600583', 'days': 20}
+2026-03-08 10:55:20 [INFO] Tool [get_stock_kline] OK in 466.2ms | status=ok
+2026-03-08 10:55:23 [INFO] Tool [get_stock_fundamentals] args={'symbol': '600583'}
+2026-03-08 10:55:23 [ERROR] Tool [get_stock_fundamentals] FAILED in 293.3ms | HTTPSConnectionPool(host='push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/get?fltt=2&invt=2&fields=f120%2Cf121%2Cf122%2Cf174%2Cf175%2Cf59%2Cf163%2Cf43%2Cf57%2Cf58%2Cf169%2Cf170%2Cf46%2Cf44%2Cf51%2Cf168%2Cf47%2Cf164%2Cf116%2Cf60%2Cf45%2Cf52%2Cf50%2Cf48%2Cf167%2Cf117%2Cf71%2Cf161%2Cf49%2Cf530%2Cf135%2Cf136%2Cf137%2Cf138%2Cf139%2Cf141%2Cf142%2Cf144%2Cf145%2Cf147%2Cf148%2Cf140%2Cf143%2Cf146%2Cf149%2Cf55%2Cf62%2Cf162%2Cf92%2Cf173%2Cf104%2Cf105%2Cf84%2Cf85%2Cf183%2Cf184%2Cf185%2Cf186%2Cf187%2Cf188%2Cf189%2Cf190%2Cf191%2Cf192%2Cf107%2Cf111%2Cf86%2Cf177%2Cf78%2Cf110%2Cf262%2Cf263%2Cf264%2Cf267%2Cf268%2Cf255%2Cf256%2Cf257%2Cf258%2Cf127%2Cf199%2Cf128%2Cf198%2Cf259%2Cf260%2Cf261%2Cf171%2Cf277%2Cf278%2Cf279%2Cf288%2Cf152%2Cf250%2Cf251%2Cf252%2Cf253%2Cf254%2Cf269%2Cf270%2Cf271%2Cf272%2Cf273%2Cf274%2Cf275%2Cf276%2Cf265%2Cf266%2Cf289%2Cf290%2Cf286%2Cf285%2Cf292%2Cf293%2Cf294%2Cf295%2Cf43&secid=1.600583 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\anaconda\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "D:\anaconda\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "D:\anaconda\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "D:\anaconda\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "D:\anaconda\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\anaconda\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "D:\anaconda\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/get?fltt=2&invt=2&fields=f120%2Cf121%2Cf122%2Cf174%2Cf175%2Cf59%2Cf163%2Cf43%2Cf57%2Cf58%2Cf169%2Cf170%2Cf46%2Cf44%2Cf51%2Cf168%2Cf47%2Cf164%2Cf116%2Cf60%2Cf45%2Cf52%2Cf50%2Cf48%2Cf167%2Cf117%2Cf71%2Cf161%2Cf49%2Cf530%2Cf135%2Cf136%2Cf137%2Cf138%2Cf139%2Cf141%2Cf142%2Cf144%2Cf145%2Cf147%2Cf148%2Cf140%2Cf143%2Cf146%2Cf149%2Cf55%2Cf62%2Cf162%2Cf92%2Cf173%2Cf104%2Cf105%2Cf84%2Cf85%2Cf183%2Cf184%2Cf185%2Cf186%2Cf187%2Cf188%2Cf189%2Cf190%2Cf191%2Cf192%2Cf107%2Cf111%2Cf86%2Cf177%2Cf78%2Cf110%2Cf262%2Cf263%2Cf264%2Cf267%2Cf268%2Cf255%2Cf256%2Cf257%2Cf258%2Cf127%2Cf199%2Cf128%2Cf198%2Cf259%2Cf260%2Cf261%2Cf171%2Cf277%2Cf278%2Cf279%2Cf288%2Cf152%2Cf250%2Cf251%2Cf252%2Cf253%2Cf254%2Cf269%2Cf270%2Cf271%2Cf272%2Cf273%2Cf274%2Cf275%2Cf276%2Cf265%2Cf266%2Cf289%2Cf290%2Cf286%2Cf285%2Cf292%2Cf293%2Cf294%2Cf295%2Cf43&secid=1.600583 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\Finance\code\a-share-agent\tools\akshare_tools.py", line 129, in get_stock_fundamentals
+    df = ak.stock_individual_info_em(symbol=symbol)
+  File "D:\anaconda\Lib\site-packages\akshare\stock\stock_info_em.py", line 40, in stock_individual_info_em
+    r = requests.get(url, params=params, timeout=timeout)
+  File "D:\anaconda\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "D:\anaconda\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\anaconda\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\anaconda\Lib\site-packages\requests\adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/get?fltt=2&invt=2&fields=f120%2Cf121%2Cf122%2Cf174%2Cf175%2Cf59%2Cf163%2Cf43%2Cf57%2Cf58%2Cf169%2Cf170%2Cf46%2Cf44%2Cf51%2Cf168%2Cf47%2Cf164%2Cf116%2Cf60%2Cf45%2Cf52%2Cf50%2Cf48%2Cf167%2Cf117%2Cf71%2Cf161%2Cf49%2Cf530%2Cf135%2Cf136%2Cf137%2Cf138%2Cf139%2Cf141%2Cf142%2Cf144%2Cf145%2Cf147%2Cf148%2Cf140%2Cf143%2Cf146%2Cf149%2Cf55%2Cf62%2Cf162%2Cf92%2Cf173%2Cf104%2Cf105%2Cf84%2Cf85%2Cf183%2Cf184%2Cf185%2Cf186%2Cf187%2Cf188%2Cf189%2Cf190%2Cf191%2Cf192%2Cf107%2Cf111%2Cf86%2Cf177%2Cf78%2Cf110%2Cf262%2Cf263%2Cf264%2Cf267%2Cf268%2Cf255%2Cf256%2Cf257%2Cf258%2Cf127%2Cf199%2Cf128%2Cf198%2Cf259%2Cf260%2Cf261%2Cf171%2Cf277%2Cf278%2Cf279%2Cf288%2Cf152%2Cf250%2Cf251%2Cf252%2Cf253%2Cf254%2Cf269%2Cf270%2Cf271%2Cf272%2Cf273%2Cf274%2Cf275%2Cf276%2Cf265%2Cf266%2Cf289%2Cf290%2Cf286%2Cf285%2Cf292%2Cf293%2Cf294%2Cf295%2Cf43&secid=1.600583 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+
+2026-03-08 11:02:17 [INFO] Tool [get_dragon_tiger_list] args={'start_date': '20260308', 'end_date': '20260308'}
+2026-03-08 11:02:17 [ERROR] Tool [get_dragon_tiger_list] FAILED in 327.2ms | 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "e:\Finance\code\a-share-agent\tools\akshare_tools.py", line 62, in _safe_call
+    df = func(**kwargs)
+  File "D:\anaconda\Lib\site-packages\akshare\stock_feature\stock_lhb_em.py", line 46, in stock_lhb_detail_em
+    total_page_num = data_json["result"]["pages"]
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2026-03-08 11:02:21 [INFO] Tool [get_dragon_tiger_list] args={'start_date': '20260307', 'end_date': '20260307'}
+2026-03-08 11:02:22 [ERROR] Tool [get_dragon_tiger_list] FAILED in 303.5ms | 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "e:\Finance\code\a-share-agent\tools\akshare_tools.py", line 62, in _safe_call
+    df = func(**kwargs)
+  File "D:\anaconda\Lib\site-packages\akshare\stock_feature\stock_lhb_em.py", line 46, in stock_lhb_detail_em
+    total_page_num = data_json["result"]["pages"]
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2026-03-08 11:21:46 [INFO] Tool [get_dragon_tiger_list] args={'start_date': '20260308', 'end_date': '20260308'}
+2026-03-08 11:21:46 [ERROR] Tool [get_dragon_tiger_list] FAILED in 342.4ms | 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "e:\Finance\code\a-share-agent\tools\akshare_tools.py", line 62, in _safe_call
+    df = func(**kwargs)
+  File "D:\anaconda\Lib\site-packages\akshare\stock_feature\stock_lhb_em.py", line 46, in stock_lhb_detail_em
+    total_page_num = data_json["result"]["pages"]
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2026-03-08 11:21:49 [INFO] Tool [get_dragon_tiger_list] args={'start_date': '20260307', 'end_date': '20260307'}
+2026-03-08 11:21:50 [ERROR] Tool [get_dragon_tiger_list] FAILED in 239.5ms | 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "e:\Finance\code\a-share-agent\tools\akshare_tools.py", line 62, in _safe_call
+    df = func(**kwargs)
+  File "D:\anaconda\Lib\site-packages\akshare\stock_feature\stock_lhb_em.py", line 46, in stock_lhb_detail_em
+    total_page_num = data_json["result"]["pages"]
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+

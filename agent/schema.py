@@ -5,6 +5,7 @@ from typing import Any
 @dataclass
 class TaskContext:
     user_instruction: str
+    structured_instruction: dict[str, Any] = field(default_factory=dict)
     raw_data: dict[str, Any] = field(default_factory=dict)
     analysis_draft: str = ""
     critique: str = ""
